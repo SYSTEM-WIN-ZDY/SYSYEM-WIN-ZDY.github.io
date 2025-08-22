@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aura IDE - 新一代智能开发环境，提供强大的代码编辑、调试和部署功能">
+    <title>Aura IDE - 新一代智能开发环境</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Aura IDE</h2>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">首页</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#features" class="nav-link">功能特性</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#download" class="nav-link">下载</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#docs" class="nav-link">文档</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#community" class="nav-link">社区</a>
+                </li>
+            </ul>
+            <div class="nav-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主页横幅 -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">Aura IDE</h1>
+                <p class="hero-subtitle">新一代智能开发环境</p>
+                <p class="hero-description">
+                    体验前所未有的开发效率，Aura IDE 为您提供智能代码补全、
+                    强大的调试工具和无缝的部署体验。
+                </p>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn btn-primary">立即下载</a>
+                    <a href="#features" class="btn btn-secondary">了解更多</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="code-preview">
+                    <pre><code class="language-javascript">function helloAura() {
+    console.log("Welcome to Aura IDE!");
+    // 智能代码补全
+    const features = [
+        "智能提示",
+        "语法高亮",
+        "实时预览"
+    ];
+    return features.join(", ");
+}</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 功能特性 -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2 class="section-title">强大功能特性</h2>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">💡</div>
+                    <h3>智能代码补全</h3>
+                    <p>基于AI的智能代码提示，大幅提升编码效率</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🎨</div>
+                    <h3>语法高亮</h3>
+                    <p>支持多种编程语言的语法高亮和主题定制</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔍</div>
+                    <h3>强大调试器</h3>
+                    <p>内置强大的调试工具，快速定位和修复问题</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3>一键部署</h3>
+                    <p>支持多种平台的一键部署，简化发布流程</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">🔌</div>
+                    <h3>丰富插件</h3>
+                    <p>海量插件生态，扩展IDE功能</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">👥</div>
+                    <h3>团队协作</h3>
+                    <p>实时协作功能，提升团队开发效率</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 下载区域 -->
+    <section id="download" class="download">
+        <div class="container">
+            <h2 class="section-title">立即下载</h2>
+            <p class="section-subtitle">选择适合您的平台，开始Aura IDE之旅</p>
+            <div class="download-grid">
+                <div class="download-card">
+                    <h3>Windows</h3>
+                    <p>支持 Windows 10 及以上版本</p>
+                    <button class="btn btn-primary">下载 Windows 版</button>
+                </div>
+                <div class="download-card">
+                    <h3>macOS</h3>
+                    <p>支持 macOS 10.15 及以上版本</p>
+                    <button class="btn btn-primary">下载 macOS 版</button>
+                </div>
+                <div class="download-card">
+                    <h3>Linux</h3>
+                    <p>支持 Ubuntu 18.04+ 及其他发行版</p>
+                    <button class="btn btn-primary">下载 Linux 版</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 文档资源 -->
+    <section id="docs" class="docs">
+        <div class="container">
+            <h2 class="section-title">文档资源</h2>
+            <div class="docs-grid">
+                <div class="docs-card">
+                    <h3>快速入门</h3>
+                    <p>快速了解Aura IDE的基本功能和使用方法</p>
+                    <a href="#" class="docs-link">查看文档 →</a>
+                </div>
+                <div class="docs-card">
+                    <h3>API 参考</h3>
+                    <p>详细的API文档和函数参考</p>
+                    <a href="#" class="docs-link">查看文档 →</a>
+                </div>
+                <div class="docs-card">
+                    <h3>教程指南</h3>
+                    <p>从基础到高级的完整教程系列</p>
+                    <a href="#" class="docs-link">查看文档 →</a>
+                </div>
+                <div class="docs-card">
+                    <h3>最佳实践</h3>
+                    <p>学习使用Aura IDE的最佳实践和技巧</p>
+                    <a href="#" class="docs-link">查看文档 →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 社区板块 -->
+    <section id="community" class="community">
+        <div class="container">
+            <h2 class="section-title">加入社区</h2>
+            <p class="section-subtitle">与全球开发者一起交流学习</p>
+            <div class="community-grid">
+                <div class="community-card">
+                    <h3>论坛</h3>
+                    <p>在官方论坛提问和分享经验</p>
+                    <a href="#" class="community-link">访问论坛</a>
+                </div>
+                <div class="community-card">
+                    <h3>GitHub</h3>
+                    <p>参与开源项目，贡献代码</p>
+                    <a href="#" class="community-link">查看项目</a>
+                </div>
+                <div class="community-card">
+                    <h3>Discord</h3>
+                    <p>加入Discord社区，实时交流</p>
+                    <a href="#" class="community-link">加入Discord</a>
+                </div>
+                <div class="community-card">
+                    <h3>博客</h3>
+                    <p>阅读最新技术文章和更新</p>
+                    <a href="#" class="community-link">阅读博客</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Aura IDE</h3>
+                    <p>新一代智能开发环境，让编程更简单、更高效。</p>
+                </div>
+                <div class="footer-section">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="#home">首页</a></li>
+                        <li><a href="#features">功能特性</a></li>
+                        <li><a href="#download">下载</a></li>
+                        <li><a href="#docs">文档</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>资源</h3>
+                    <ul>
+                        <li><a href="#">API文档</a></li>
+                        <li><a href="#">教程</a></li>
+                        <li><a href="#">示例</a></li>
+                        <li><a href="#">博客</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>联系我们</h3>
+                    <ul>
+                        <li><a href="#">支持</a></li>
+                        <li><a href="#">反馈</a></li>
+                        <li><a href="#">Twitter</a></li>
+                        <li><a href="#">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Aura IDE. 保留所有权利。</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
